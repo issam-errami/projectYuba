@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Yuba consulting</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+
+    <style>
+
+
+* {
+	box-sizing: border-box;
+}
+
+.banner {
+	height:50px;
+	position: relative;
+	text-align: center;
+}
+
+.networks {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.networks-outer {
+	display: table;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	border: 2px solid white;
+	border-radius: 4em;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.networks-outer a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+}
+
+.fa:before {
+	font-size: 40px;
+}
+
+.networks:hover .networks-outer {
+	background: rgba(255,255,255,.5);
+	cursor: pointer;
+}
+
+/**** Social-Network-Specific ****/
+
+
+.networks:hover .bi-youtube {
+	color: red;
+}
+
+#youtube.networks-outer:hover {
+	border-color: red;
+}
+
+.networks:hover .bi-twitter {
+	color: rgb(29,161,242);
+}
+
+#twitter.networks-outer:hover {
+	border-color: rgb(29,161,242);
+}
+
+.networks:hover .bi-google {
+	animation: multicolor 4s linear 0s infinite alternate;
+	color: #db3236;
+}
+
+#google-plus.networks-outer:hover {
+	animation: multicolorBorder 4s linear 0s infinite alternate;
+	border-color: #db3236;
+}
+
+@keyframes multicolor {
+	0% {
+		color: #4885ed;
+	}
+	33% {
+		color: #3cba54;
+	}
+	66% {
+		color: #f4c20d;
+	}
+	100% {
+		color: #db3236;
+	}
+}
+
+@keyframes multicolorBorder {
+	0% {
+		border-color: #4885ed;
+	}
+	33% {
+		border-color: #3cba54;
+	}
+	66% {
+		border-color: #f4c20d;
+	}
+	100% {
+		border-color: #db3236;
+	}
+}
+
+
+
+
+
+.networks:hover .bi-linkedin {
+	color: #0077B5;
+}
+
+#linkedin.networks-outer:hover {
+	border-color: #0077B5;
+}
+
+.card {
+    background: #287bff;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 15px 0 #fff,
+            inset 0 -15px 0 rgba(255, 255, 255, 0.24),
+            0 45px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+     
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: -40%;
+    padding: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+    transform: rotate(35deg);
+    pointer-events: none;
+    filter: blur(5px);
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(to bottom, #ff2ae0, #645bf6); float:left; 
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to bottom, #ffec61, #f321d7);float:left;
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to bottom, #24ff72, #9a4eff);
+}
+card:nth-child(4) {
+    background: linear-gradient(to bottom, #ff2ae0, #645bf6); float:left; 
+}
+
+.card:nth-child(5) {
+    background: linear-gradient(to bottom, #ffec61, #f321d7);float:left;
+}
+
+.card:nth-child(6) {
+    background: linear-gradient(to bottom, #24ff72, #9a4eff);
+}
+
+.card .icon {
+    position: absolute;
+    width: 140px;
+    height: 120px;
+    background: #3c2846;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 15px 0 rgba(0, 0, 0, 0.1),
+            inset 0 -8px 0 #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card .icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px #3c2846;
+}
+
+.card .icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -15px -15px 0 15px #3c2846;
+}
+
+.card .icon ion-icon {
+    color: #fff;
+    position: relative;
+    font-size: 6em;
+    --ionicon-stroke-width: 24px;
+}
+
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.card .content h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card .content p {
+    color: #fff;
+    line-height: 1.5em;
+}
+
+
+
+
+
+.navbar-dark .navbar-nav a.nav-link {
+  color: #ffffff;
+  font-size: 1.1em;
+}
+.dropdown-menu {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  border-radius: 0;
+ 
+}
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+  .dropdown-menu.show {
+    display: flex;
+  }
+}
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu li .dropdown-item {
+  color: gray;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+.dropdown-menu li .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #516beb;
+}
+.dropdown-menu li:first-child a:hover {
+  background-color: #f1f1f1;
+}
+@media only screen and (max-width: 992px) {
+  .dropdown-menu.show {
+    flex-wrap: wrap;
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+  .dropdown:hover .dropdown-menu {
+    width: 40vw;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+        /* adds some margin below the link sets  */
+        .navbar .dropdown-menu div[class*="col"] {
+           margin-bottom:1rem;
+        }
+        
+        .navbar .dropdown-menu {
+          border:none;
+          background-color:#0060c8!important;
+        }
+
+        a:hover {
+	color: #c9d3d8;
+}
+        
+        /* breakpoint and up - mega dropdown styles */
+        @media screen and (min-width: 992px) {
+          
+          /* remove the padding from the navbar so the dropdown hover state is not broken */
+        .navbar {
+          padding-top:0px;
+          padding-bottom:0px;
+        }
+        
+        /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+        .navbar .nav-item {
+          padding:.5rem .5rem;
+          margin:0 .25rem;
+        }
+        
+        /* makes the dropdown full width  */
+        .navbar .dropdown {position:static;}
+        
+        .navbar .dropdown-menu {
+          width:100%;
+          left:0;
+          right:0;
+        /*  height of nav-item  */
+          top:45px;
+          
+          display:block;
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.3s linear;
+          
+        }
+          
+         
+
+        
+          
+          /* shows the dropdown menu on hover */
+        .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+          display:block;
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0s, opacity 0.3s linear;
+        }
+          
+          .navbar .dropdown-menu {
+            border: 1px solid rgba(0,0,0,.15);
+            background-color: #fff;
+          }
+        
+        }
+        
+    
+        .btn-circle {
+  width: 1.875rem;
+  height: 1.875rem;
+  text-align: center;
+  padding: 0.375rem 0;
+  font-size: 0.75rem;
+  line-height: 1.428571429;
+  border-radius: 0.938rem;
+}
+.btn-circle.btn-lg {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding: 0.625rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  border-radius: 1.563rem;
+}
+
+    </style>
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="headerAbout">
+       
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position:sticky; top:0; z-index: 10;">
+        <a class="navbar-brand" href="Home.html">Logo Yuba consulting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4" style="margin-top: -10px;">
+                      <span class="text-uppercase text-white"><h2>  <a href="Aboutc.html" >About us</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6>  this page including infos to know our company, story, and values. a little introduction ,  a little introduction ,  a little introduction ,  a little introduction 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4" style="margin-top: -19px;">
+                      <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutc.html#i">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aboutc.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aboutc.html#p">Phelosophy of the work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutc.html#t">the Team</a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/logo3.png" alt="Web Design Guides" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white"> Dsecover Yuba</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Features                  </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+      
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Features.html" >Features</a></h2></span>
+                      <ul class="nav flex-column">
+                     <p class="nav flex-column">
+                      <h6>  this page including infos to know our company, story, and values. a little introduction ,  a little introduction ,  a little introduction ,  a little introduction 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                     
+                    </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/shop/jake-portfolio-hubspot-theme/">
+                        <img src="https://i0.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2022/01/jake-portfolio-cover.jpg?w=200&ssl=1" alt="Portfolio Website Templates" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white">Create a Portfolio Website Fast</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ; ">
+      
+      
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Services.html" >Our services</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6> Welcome to Yuba's services, due to feautres of our company , Yuba created to offer and answer differents services, including the liste beside. 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-2">
+                      <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ItSolutions">It solutions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#WebProjects">Web projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Mobiledata">Mobile apps</a>
+                      </li>
+                      </ul>
+                      </div>
+                      <div class="col-md-2">
+                        <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Security">Security</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#UX/UI Design">UX/UI Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#DataBases">Data bases</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+      
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/">
+                        <img src="assets/images/images/secur.jfif" alt="Web Design Resources" class="img-fluid" style="width:350px ; height:200px">
+                      </a>
+                      <p class="text-white">We are ready to realization projects and solutions</p>
+                      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Space client                 </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Clients.html" >Space client</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6>  it is a space preset  our ideas and views to our clients, also you can find our offers and payement 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#introduction">Here to answere your requests</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#histoy">Here to  help your business</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#phelosophy">Offers and prices</a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/client.jfif" alt="Web Design Guides" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white">Best offers and services</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Contact us            </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Clients.html" >Contact us</a></h2></span>
+                      <p class="nav flex-column">
+                      <h4> <strong>Adress</strong> </h4>
+                        <ul>adresse 1:</ul>
+                       <hr>
+
+                        <h4> <strong>Phone</strong></h4>
+                          <ul><li>phone 1: +32 98989009</li><li>phone 2: +212 98989009</li></ul>
+                          
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#introduction"><i class="fa fa-google"><p>YubaConsulting@gmail.com</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#histoy"><i class="fa fa-twitter"><p>@YubaConsulting</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#histoy"><i class="fa fa-skype"><p>@YubaConsulting</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#phelosophy"><i class="fa fa-linkedin"><p>YubaConsulting</p></i></a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/logo3.png" alt="Web Design Guides" class="img-fluid" style="height:200px; width:350px ;">
+                      </a>
+                      <p class="text-white">Best offers and services</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+
+
+
+
+            
+          </ul>
+          <form class="form-inline my-1 my-lg-0">
+            <input class="form-control w-75 m-lg-1"  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary btn-circle " ><span class="bi-search"></span></button>
+
+          </form>
+        </div>
+      
+      
+      </nav>
+                  
+                  
+<!-- Navbar End -->
+
+ 
+                      
+                      
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+        <!-- ***** Contact Us End ***** --> 
+        <div class="foot" >
+          <div class="container-fluid text-light pt-4 pb-4" style="background-color:gray ; margin-top: 30px;">
+            <div class="container py-0" style="background-color:gray;">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="d-flex flex-column justify-content-center">
+                            <a class="text-light mb-2" href="home.html"><i class="bi bi-arrow-right"></i>
+                            </i>Home</a>
+                            <a class="text-light mb-2" href="Aboutc.html"><i class="bi bi-arrow-right"></i>
+                            </i>About Us</a>
+                            <a class="text-light mb-2" href="Features.html"><i class="bi bi-arrow-right"></i>
+                            </i>Features</a>
+                            <a class="text-light mb-2" href="Services.html"><i class="bi bi-arrow-right"></i>
+                            </i>Our Services</a>
+                            <a class="text-light mb-2" href="Clients.html"><i class="bi bi-arrow-right"></i>
+                            </i>Space client</a>
+                            <a class="text-light" href="Contact.html"><i class="bi bi-arrow-right"></i>
+                              Contact Us</a>
+                        </div>
+                    </div>
+                   
+                    <div class="col-6">
+                        <h4 class="d-inline-block  border-bottom border-5 border-secondary mb-4"  style="color:deepskyblue;">useful links</h4>
+                        <div class="d-flex flex-column justify-content-center">
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                              Term of the uses</a>
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                            </i>Accebelity</a>
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                            </i>Cookies settings</a>
+                            <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                            </i>Cookie policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+          <!-- ***** Footer Start ***** -->
+          <div style="height:2px;
+          border-width:0;
+          background-color:#cce6eb;"></div>
+          
+          <footer style="padding:10px ;height: 100px;  background-color:gray;"> 
+       
+            <div class="row">
+              <div class="col-sm-4"> <img src="assets/images/images/logo3.png" style="height: 80px ;width: 90px;"  ></div>
+              <div class="col-sm-4">                    
+                <p class="copyright">Copyright &copy; 2022 YubaConsulting</p>
+              </div>
+              <div class="col-sm-4 p-2"><div class="banner">
+      
+      
+                <div class="networks">
+                    <div id="youtube" class="networks-outer">
+                        <a href="#">
+                            <i class="bi-youtube" ></i>
+                        </a>
+                    </div>
+                </div>
+            
+            
+                <div class="networks">
+                    <div id="twitter" class="networks-outer">
+                        <a href="#">
+                            <i class="bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            
+                <div class="networks">
+                    <div id="google-plus" class="networks-outer">
+                        <a href="">
+                            <i class="bi-google"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            
+                
+            
+                
+            
+                <div class="networks">
+                    <div id="linkedin" class="networks-outer">
+                        <a href="">
+                            <i class="bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                    
+            
+            </div></div>
+            </div>
+              
+              </div>
+            </div>
+          </footer>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

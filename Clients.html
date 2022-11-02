@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Yuba consulting</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+.banner {
+	height:50px;
+	position: relative;
+	text-align: center;
+}
+
+.networks {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.networks-outer {
+	display: table;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	border: 2px solid white;
+	border-radius: 4em;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.networks-outer a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+}
+
+.fa:before {
+	font-size: 40px;
+}
+
+.networks:hover .networks-outer {
+	background: rgba(255,255,255,.5);
+	cursor: pointer;
+}
+
+/**** Social-Network-Specific ****/
+
+
+.networks:hover .bi-youtube {
+	color: red;
+}
+
+#youtube.networks-outer:hover {
+	border-color: red;
+}
+
+.networks:hover .bi-twitter {
+	color: rgb(29,161,242);
+}
+
+#twitter.networks-outer:hover {
+	border-color: rgb(29,161,242);
+}
+
+.networks:hover .bi-google {
+	animation: multicolor 4s linear 0s infinite alternate;
+	color: #db3236;
+}
+
+#google-plus.networks-outer:hover {
+	animation: multicolorBorder 4s linear 0s infinite alternate;
+	border-color: #db3236;
+}
+
+@keyframes multicolor {
+	0% {
+		color: #4885ed;
+	}
+	33% {
+		color: #3cba54;
+	}
+	66% {
+		color: #f4c20d;
+	}
+	100% {
+		color: #db3236;
+	}
+}
+
+@keyframes multicolorBorder {
+	0% {
+		border-color: #4885ed;
+	}
+	33% {
+		border-color: #3cba54;
+	}
+	66% {
+		border-color: #f4c20d;
+	}
+	100% {
+		border-color: #db3236;
+	}
+}
+
+
+
+
+
+.networks:hover .bi-linkedin {
+	color: #0077B5;
+}
+
+#linkedin.networks-outer:hover {
+	border-color: #0077B5;
+}
+
+
+
+body {
+	background: #fff;
+}
+.accordion .card {
+	background: none;
+	border: none;
+}
+.accordion .card .card-header {
+	background: none;
+	border: none;
+	padding: .4rem 1rem;
+	font-family: "Roboto", sans-serif;
+}
+.accordion .card-header h2 span {
+	float: left;
+	margin-top: 10px;
+}
+.accordion .card-header .btn {
+	color: #2f2f31;
+	font-size: 1.04rem;
+	text-align: left;
+	position: relative;
+	font-weight: 500;
+	padding-left: 2rem;
+}
+.accordion .card-header i {
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+.accordion .card-header .btn:hover {
+	color: #ff8300;
+}
+.accordion .card-body {
+	color: #324353;
+	padding: 0.5rem 3rem;
+}
+.page-title {
+	margin: 3rem 0 3rem 1rem;
+	font-family: "Roboto", sans-serif;
+	position: relative;
+}
+.page-title::after {
+	content: "";
+	width: 80px;
+	position: absolute;
+	height: 3px;
+	border-radius: 1px;
+	background: #73bb2b;
+	left: 0;
+	bottom: -15px;
+}
+.accordion .highlight .btn {
+	color: #74bd30;
+}
+.accordion .highlight i {
+	transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
+
+
+
+
+
+
+
+
+
+        /* adds some margin below the link sets  */
+        .navbar .dropdown-menu div[class*="col"] {
+           margin-bottom:1rem;
+        }
+        
+        .navbar .dropdown-menu {
+          border:none;
+          background-color:#0060c8!important;
+        }
+
+        a:hover {
+	color: #c9d3d8;
+}
+        
+        /* breakpoint and up - mega dropdown styles */
+        @media screen and (min-width: 992px) {
+          
+          /* remove the padding from the navbar so the dropdown hover state is not broken */
+        .navbar {
+          padding-top:0px;
+          padding-bottom:0px;
+        }
+        
+        /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+        .navbar .nav-item {
+          padding:.5rem .5rem;
+          margin:0 .25rem;
+        }
+        
+        /* makes the dropdown full width  */
+        .navbar .dropdown {position:static;}
+        
+        .navbar .dropdown-menu {
+          width:100%;
+          left:0;
+          right:0;
+        /*  height of nav-item  */
+          top:45px;
+          
+          display:block;
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s, opacity 0.3s linear;
+          
+        }
+          
+         
+
+        
+          
+          /* shows the dropdown menu on hover */
+        .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+          display:block;
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0s, opacity 0.3s linear;
+        }
+          
+          .navbar .dropdown-menu {
+            border: 1px solid rgba(0,0,0,.15);
+            background-color: #fff;
+          }
+        
+        }
+        
+    
+        .btn-circle {
+  width: 1.875rem;
+  height: 1.875rem;
+  text-align: center;
+  padding: 0.375rem 0;
+  font-size: 0.75rem;
+  line-height: 1.428571429;
+  border-radius: 0.938rem;
+}
+.btn-circle.btn-lg {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding: 0.625rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  border-radius: 1.563rem;
+}
+</style>
+<script>
+$(document).ready(function(){
+	// Add minus icon for collapse element which is open by default
+	$(".collapse.show").each(function(){
+		$(this).prev(".card-header").addClass("highlight");
+	});
+	
+	// Highlight open collapsed element 
+	$(".card-header .btn").click(function(){
+		$(".card-header").not($(this).parents()).removeClass("highlight");
+		$(this).parents(".card-header").toggleClass("highlight");
+	});
+});
+</script>
+</head>
+<body>
+
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+       
+    <header class="headerAbout">
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position:sticky; top:0; z-index: 10;">
+        <a class="navbar-brand" href="Home.html">Logo Yuba consulting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4" style="margin-top: -10px;">
+                      <span class="text-uppercase text-white"><h2>  <a href="Aboutc.html" >About us</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6>  this page including infos to know our company, story, and values. a little introduction ,  a little introduction ,  a little introduction ,  a little introduction 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4" style="margin-top: -19px;">
+                      <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutc.html#i">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aboutc.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aboutc.html#p">Phelosophy of the work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutc.html#t">the Team</a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/logo3.png" alt="Web Design Guides" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white"> Dsecover Yuba</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Features                  </a>
+<div class="dropdown-menu " aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+      
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Features.html" >Features</a></h2></span>
+                      <ul class="nav flex-column">
+                     <p class="nav flex-column">
+                      <h6>  this page including infos to know our company, story, and values. a little introduction ,  a little introduction ,  a little introduction ,  a little introduction 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                     
+                    </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/shop/jake-portfolio-hubspot-theme/">
+                        <img src="https://i0.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2022/01/jake-portfolio-cover.jpg?w=200&ssl=1" alt="Portfolio Website Templates" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white">Create a Portfolio Website Fast</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ; ">
+      
+      
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Services.html" >Our services</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6> Welcome to Yuba's services, due to feautres of our company , Yuba created to offer and answer differents services, including the liste beside. 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-2">
+                      <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ItSolutions">It solutions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#WebProjects">Web projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Mobiledata">Mobile apps</a>
+                      </li>
+                      </ul>
+                      </div>
+                      <div class="col-md-2">
+                        <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Security">Security</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#UX/UI Design">UX/UI Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#DataBases">Data bases</a>
+                      </li>
+                    </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+      
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/">
+                        <img src="assets/images/images/secur.jfif" alt="Web Design Resources" class="img-fluid" style="width:350px ; height:200px">
+                      </a>
+                      <p class="text-white">We are ready to realization projects and solutions</p>
+                      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Space client                 </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Clients.html" >Space client</a></h2></span>
+                      <p class="nav flex-column">
+                      <h6>  it is a space preset  our ideas and views to our clients, also you can find our offers and payement 
+                        </h6>
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#introduction">Here to answere your requests</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#histoy">Here to  help your business</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#phelosophy">Offers and prices</a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/client.jfif" alt="Web Design Guides" class="img-fluid" style="height:200px;width:350px ;">
+                      </a>
+                      <p class="text-white">Best offers and services</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="About.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Contact us            </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-top:40px ;margin-top:10px ;height:305px ;">
+      
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase text-white"><h2><a href="Clients.html" >Contact us</a></h2></span>
+                      <p class="nav flex-column">
+                      <h4> <strong>Adress</strong> </h4>
+                        <ul>adresse 1:</ul>
+                       <hr>
+
+                        <h4> <strong>Phone</strong></h4>
+                          <ul><li>phone 1: +32 98989009</li><li>phone 2: +212 98989009</li></ul>
+                          
+                      </p>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#introduction"><i class="fa fa-google"><p>YubaConsulting@gmail.com</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#histoy"><i class="fa fa-twitter"><p>@YubaConsulting</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#histoy"><i class="fa fa-skype"><p>@YubaConsulting</p></i></a>
+                    </li>
+                    <li class="nav-item pt-0">
+                      <a class="nav-link" href="#phelosophy"><i class="fa fa-linkedin"><p>YubaConsulting</p></i></a>
+                    </li>
+                  </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a target="_blank" href="https://bootstrapcreative.com/resources/a-beginners-guide-to-hubspot-cms/">
+                        <img src="assets/images/images/logo3.png" alt="Web Design Guides" class="img-fluid" style="height:200px; width:350px ;">
+                      </a>
+                      <p class="text-white">Best offers and services</p>
+      
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+
+
+
+
+            
+          </ul>
+          <form class="form-inline my-1 my-lg-0">
+            <input class="form-control w-75 m-lg-1"  type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary btn-circle " ><span class="bi-search"></span></button>
+
+          </form>
+        </div>
+      
+      
+      </nav>
+                  
+    </header>       
+<!-- Navbar End -->
+
+              <!-- 
+  
+  Radio version of tabs.
+
+  Requirements:
+  - not rely on specific IDs for CSS (the CSS shouldn't need to know specific IDs)
+  - flexible for any number of unkown tabs [2-6]
+  - accessible
+
+  Caveats:
+  - since these are checkboxes the tabs not tab-able, need to use arrow keys
+
+  Also worth reading:
+  http://simplyaccessible.com/article/danger-aria-tabs/
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Märzen</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Rauchbier</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Dunkles Bock</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      <h2>6A. Märzen</h2>
+      <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+      <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+  </section>
+    <section id="rauchbier" class="tab-panel">
+      <h2>6B. Rauchbier</h2>
+      <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
+      <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h2>6C. Dunkles Bock</h2>
+      <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
+      <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
+    </section>
+  </div>
+  
+</div>
+
+<p><small>Source: <cite><a href="https://www.bjcp.org/stylecenter.php">BJCP Style Guidelines</a></cite></small></p>
+                <!-- Breadcrumb-->
+          
+         <!-- ***** Features Small Start ***** -->
+        
+        
+         <section id="features">
+        
+        
+        
+        
+        
+                      
+                      
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+
+        <!-- ***** Header Text Start ***** -->
+
+    <!-- ***** Welcome Area End ***** -->
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-bottom-100" id="blog">
+        <div class="container">
+            <div class="row">
+            <div class="col" style="width: 50%;">
+                <div class="left-heading">
+                    <h2 class="section-title">Here we can help you to realized your business</h2>
+                </div>
+                <div class="left-text">
+                    <p>Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it  Paragraph about it Paragraph about it Paragraph about it Paragraph about it </p>
+                </div>
+            
+               <div data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+               </div>
+               </div>
+              <div class="col" style="width: 50%;float:left">
+                <div class="left-heading">
+                    <h2 class="section-title">Here we can help you to realized your business</h2>
+                </div>
+                <div class="left-text">
+                    <p>Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it Paragraph about it  Paragraph about it Paragraph about it Paragraph about it Paragraph about it </p>
+                </div>
+            
+               <div data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+               </div>
+            </div>              
+          </div>
+        </div>
+
+
+    </section>
+<!-- Bootstrap CSS -->
+<!-- jQuery first, then Bootstrap JS. -->
+<!-- Nav tabs -->
+
+
+    <section class="section padding-top-70 padding-bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="page-title">FAQs</h1>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="clearfix mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-circle-down"></i> What is Bootstrap Framework?</a>									
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-circle-down"></i> How to Create Responsive Website with Bootstrap?</a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-circle-down"></i> Does Bootstrap Framework Provide Cross-browser Support?</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-chevron-circle-down"></i> Can I Use Bootstrap for Mobile App Development?</a>                               
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+
+
+    <section class="section colored">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Our offers</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+<p>
+    this is prices of our services  presented bellow in concediration measures based on  amount/ delai/ number of tasks with possibility descussing and making good deal for us both.
+</p>                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Simple project</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">22.00</span>
+                                <span class="period"> in sum normal </span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Number tasks (less 10 tasks) 
+                                <span style="color:orange">
+                                5.0$
+                                /week</span>
+                            </li>
+                                <li class="active">Delai realization (10 day or less) <span style="color:orange">
+                                    10.0$
+                                    /week</span></li>
+                            
+                                <li class="active">Hours working <span style="color:orange">
+                                    5.0$
+                                    /hour</span></li>
+                                    <li class="active">Complexity (less) <span style="color:orange">
+                                        2.0$
+                                        </span></li>
+                                        <li class="active">Late in realization<span style="color:red">
+                                            -2.0$ / day late
+                                            </span></li>
+                                            <li class="active">Forget detail or less realization <span style="color:red">
+                                                -2.0$ / fault
+                                                </span></li>
+                                                <li class="active">Good reaization before the fixed date  <span style="color:green">
+                                                    +2.0$ / day before fixed date 
+                                                    </span></li>
+
+                               
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                    <div class="pricing-item active">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Meduim project</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">30.00</span>
+                                <span class="period">monthly</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">number tasks ( 10 - 20tasks) 
+                                <span style="color:orange">
+                                10.0$
+                                /15 days</span>
+                            </li>
+                                <li class="active">delai realization <span style="color:orange">
+                                    12.0$
+                                    /week</span></li>
+                            
+                                <li class="active">Hours working <span style="color:orange">
+                                    5.0$
+                                    /hour</span></li>
+                                    <li class="active">Complexity (less) <span style="color:orange">
+                                        3.0$
+                                        </span></li>
+                                        <li class="active">late in realization<span style="color:red">
+                                            -2.0$ / day late
+                                            </span></li>
+                                            <li class="active">Forget detail or less realization <span style="color:red">
+                                                -2.0$ / fault
+                                                </span></li>
+                                                <li class="active">Good reaization before the fixed date  <span style="color:green">
+                                                    +2.0$ / day before fixed date 
+                                                    </span></li>
+
+                               
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Long project</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-wrapper">
+                                <span class="currency">$</span>
+                                <span class="price">41.00</span>
+                                <span class="period">monthly</span>
+                            </div>
+                            <ul class="list">
+                                <li class="active">Number tasks (more 20 tasks) 
+                                <span style="color:orange">
+                                10.0$
+                                /week</span>
+                            </li>
+                                <li class="active">delai realization <span style="color:orange">
+                                    18.0$
+                                    /week</span></li>
+                            
+                                <li class="active">Hours working <span style="color:orange">
+                                    5.0$
+                                    /hour</span></li>
+                                    <li class="active">Complexity (less) <span style="color:orange">
+                                        8.0$
+                                        </span></li>
+                                        <li class="active">late in realization<span style="color:red">
+                                            -4.0$ / day late
+                                            </span></li>
+                                            <li class="active">Forget detail or less realization <span style="color:red">
+                                                -4.0$ / fault
+                                                </span></li>
+                                                <li class="active">Good reaization before the fixed date  <span style="color:green">
+                                                    +4.0$ / day before fixed date 
+                                                    </span></li>
+
+                               
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="main-button">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    <div class="foot" >
+        <div class="container-fluid text-light pt-4 pb-4" style="background-color:gray ; margin-top: 30px;">
+          <div class="container py-0" style="background-color:gray;">
+              <div class="row g-2">
+                  <div class="col-6">
+                      <div class="d-flex flex-column justify-content-center">
+                          <a class="text-light mb-2" href="home.html"><i class="bi bi-arrow-right"></i>
+                          </i>Home</a>
+                          <a class="text-light mb-2" href="Aboutc.html"><i class="bi bi-arrow-right"></i>
+                          </i>About Us</a>
+                          <a class="text-light mb-2" href="Features.html"><i class="bi bi-arrow-right"></i>
+                          </i>Features</a>
+                          <a class="text-light mb-2" href="Services.html"><i class="bi bi-arrow-right"></i>
+                          </i>Our Services</a>
+                          <a class="text-light mb-2" href="Clients.html"><i class="bi bi-arrow-right"></i>
+                          </i>Space client</a>
+                          <a class="text-light" href="Contact.html"><i class="bi bi-arrow-right"></i>
+                            Contact Us</a>
+                      </div>
+                  </div>
+                 
+                  <div class="col-6">
+                      <h4 class="d-inline-block  border-bottom border-5 border-secondary mb-4"  style="color:deepskyblue;">useful links</h4>
+                      <div class="d-flex flex-column justify-content-center">
+                          <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                            Term of the uses</a>
+                          <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                          </i>Accebelity</a>
+                          <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                          </i>Cookies settings</a>
+                          <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right"></i>
+                          </i>Cookie policy</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+        <!-- ***** Footer Start ***** -->
+        <div style="height:2px;
+        border-width:0;
+        background-color:#cce6eb;"></div>
+        
+        <footer style="padding:10px ;height: 100px;  background-color:gray;"> 
+     
+          <div class="row">
+            <div class="col-sm-4"> <img src="assets/images/images/logo3.png" style="height: 80px ;width: 90px;"  ></div>
+            <div class="col-sm-4">                    
+              <p class="copyright">Copyright &copy; 2022 YubaConsulting</p>
+            </div>
+            <div class="col-sm-4 p-2"><div class="banner">
+    
+    
+              <div class="networks">
+                  <div id="youtube" class="networks-outer">
+                      <a href="#">
+                          <i class="bi-youtube" ></i>
+                      </a>
+                  </div>
+              </div>
+          
+          
+              <div class="networks">
+                  <div id="twitter" class="networks-outer">
+                      <a href="#">
+                          <i class="bi-twitter"></i>
+                      </a>
+                  </div>
+              </div>
+          
+          
+              <div class="networks">
+                  <div id="google-plus" class="networks-outer">
+                      <a href="">
+                          <i class="bi-google"></i>
+                      </a>
+                  </div>
+              </div>
+          
+          
+              
+          
+              
+          
+              <div class="networks">
+                  <div id="linkedin" class="networks-outer">
+                      <a href="">
+                          <i class="bi-linkedin"></i>
+                      </a>
+                  </div>
+              </div>
+          
+                  
+          
+          </div></div>
+          </div>
+            
+            </div>
+          </div>
+        </footer>
+        <!-- Footer -->
+      </section>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
